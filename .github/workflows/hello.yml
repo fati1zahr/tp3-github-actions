@@ -31,6 +31,6 @@ jobs:
           echo "Branche : $GITHUB_REF_NAME"
           echo "Commit : $GITHUB_SHA"
           echo "Événement : $GITHUB_EVENT_NAME"
-      - name: Provoquer une erreur
-        run: exit 1
+      # - name: Provoquer une erreur
+      #   run: exit 1
 

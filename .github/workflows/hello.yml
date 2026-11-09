@@ -25,11 +25,12 @@ jobs:
           
           echo "Liste des fichiers"
           ls -la
-          
+
       - name: Informations Git
         run: |
           echo "Branche : $GITHUB_REF_NAME"
           echo "Commit : $GITHUB_SHA"
           echo "Événement : $GITHUB_EVENT_NAME"
-
+      - name: Provoquer une erreur
+        run: exit 1
 
